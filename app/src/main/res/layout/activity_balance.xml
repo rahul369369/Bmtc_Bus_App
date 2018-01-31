@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.bmtc_bus_app.Balance">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/name"/>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:layout_margin="15dp"
+                    android:hint="enter your name"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/emailid" />
+
+                <EditText
+                    android:id="@+id/cardno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:hint="enter card name"
+                    android:textStyle="italic"
+                    android:inputType="number" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:hint="CVV"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:hint="valid_upto"
+                        android:layout_marginLeft="110dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+
+                    <EditText
+
+                        android:layout_width="110dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:inputType="number"
+                        android:ems="3"
+                        android:textStyle="italic"
+                        android:id="@+id/cvv"/>
+
+
+                    <EditText
+                        android:id="@+id/mm"
+                        android:textStyle="italic"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="70dp"
+                        android:ems="2"
+                        android:inputType="number"
+                        android:hint="MM-YY"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <EditText
+
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:inputType="number"
+                android:textStyle="italic"
+                android:hint="Balance"
+                android:id="@+id/rs"/>
+
+
+        </LinearLayout>
+
+
+            <Button
+                android:id="@+id/recharge"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:hint="RECHARGE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
+
